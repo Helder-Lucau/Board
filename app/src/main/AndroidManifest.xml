@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL --><!-- suppress ALL -->
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.board">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens>
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CUEA News"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.MaterialComponents.Light.DarkActionBar.Bridge.">
+        <activity android:name=".Tab2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Forgot_password" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".login" />
+        <!-- suppress AndroidDomInspection -->
+        <activity android:name=".GeneralFragment" />
+        <activity android:name=".SpecificFragment" />
+        <activity android:name=".PostFragment" />
+        <activity android:name=".Tab"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cuea News</string>
+    <string name="pass">Password</string>
+    <string name="login">Log In</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="register">Sign Up for Cuea News</string>
+    <string name="id">ID</string>
+    <string name="email">Email</string>
+    <string name="department">Department</string>
+    <string name="image_use">*If you have a poster to share, Add it here. It will be associated with your post.An Image
+    creates an emphasis.And is easy to remember</string>
+    <string name="fineprint_use">*Add any disclaimers,Urgency of the matter or extra information here.</string>
+    <string name="create">Register</string>
+    <string name="fineprint">Fineprint</string>
+    <string name="message">Message</string>
+    <string name="username">Username</string>
+
+    <string name="title_activity_the_news">The_news</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tab">tab</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_tabs">tabs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

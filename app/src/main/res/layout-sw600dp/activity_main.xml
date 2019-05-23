@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".MainActivity"
+    tools:style="@android:style/Theme.Material">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="322dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:fontFamily="@font/andada"
+        android:hint="@string/message"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="18sp"
+        android:textAllCaps="false"
+        android:textColorHint="@android:color/black"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/txt_fineprint"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:fontFamily="@font/andada"
+        android:hint="@string/fineprint"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="18sp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="226dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/custom_buttom"
+        android:drawableTop="@drawable/ic_list_black_24dp"
+        tools:layout_editor_absoluteX="415dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/andada"
+        android:text="Add"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/andada"
+        android:text="Insert"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+</android.support.constraint.ConstraintLayout>
