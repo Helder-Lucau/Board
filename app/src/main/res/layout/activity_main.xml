@@ -11,8 +11,9 @@
 
     <EditText
         android:id="@+id/et_content"
-        android:layout_width="322dp"
-        android:layout_height="43dp"
+        android:layout_width="294dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:fontFamily="@font/andada"
         android:hint="@string/message"
@@ -22,14 +23,19 @@
         android:textColorHint="@android:color/black"
         android:textStyle="italic"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txt_fineprint"
         android:layout_width="298dp"
         android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:fontFamily="@font/andada"
         android:hint="@string/fineprint"
@@ -39,44 +45,51 @@
         android:textAllCaps="false"
         android:textStyle="bold|italic"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="307dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose"
+        app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/img_poster"
-        android:layout_width="226dp"
-        android:layout_height="117dp"
+        android:layout_width="297dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_content"
         app:srcCompat="@mipmap/ic_launcher"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="144dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <Button
         android:id="@+id/btn_list"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="17dp"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/custom_buttom"
         android:drawableTop="@drawable/ic_list_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toEndOf="@+id/btn_add"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
         app:layout_constraintVertical_bias="0.902" />
 
     <Button
         android:id="@+id/btn_add"
-        android:layout_width="165dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="235dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_buttom"
         android:fontFamily="@font/andada"
@@ -84,22 +97,32 @@
         android:textAllCaps="true"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_list"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_fineprint"
+        app:layout_constraintVertical_bias="0.88" />
 
     <Button
         android:id="@+id/btn_choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
         android:background="@drawable/round_button"
         android:fontFamily="@font/andada"
         android:text="Insert"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="172dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toStartOf="@+id/img_poster"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/img_poster"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
 </android.support.constraint.ConstraintLayout>
